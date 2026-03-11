@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Alwi Portfolio</title>
+</head>
+<body>
+
+
+<div class="container" id="mainContainer">
+
+    <!-- ===== NAVBAR ===== -->
+    <div class="navbar" id="navbar">
+        <div class="navbar-row-1">
+            <div class="logo">
+                <svg id="navbarLogo" class="navbar-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" aria-label="ALWI"><rect fill="#fff" x="568.6" y="0.4" width="28.65" height="159.38"/><polygon fill="#fff" points="298.63 159.78 190.5 159.78 190.5 0.4 219.14 0.4 219.14 131.13 284.88 131.13 298.63 159.78"/><polygon fill="#fff" points="155.64 160 127.05 160 124.3 154.25 117.7 140.46 98.51 100.48 96.68 96.6 93.53 90.05 92.97 88.89 79.2 60.26 65.47 88.89 64.88 90.11 34.11 154.25 31.35 160 2.76 160 16.61 131.13 34.11 94.63 64.88 30.49 65.47 29.26 79.2 0.64 92.97 29.26 93.53 30.43 96.68 36.98 98.51 40.86 117.7 80.84 124.3 94.63 132.46 111.67 141.79 131.13 155.64 160"/><polygon fill="#fff" points="533.74 0.57 519.89 29.44 502.39 65.94 471.62 130.08 471.46 130.42 471.03 131.31 457.3 159.93 443.53 131.31 442.97 130.14 439.82 123.59 437.99 119.71 418.8 79.73 412.2 65.94 409.31 59.91 409.18 60.2 406.42 65.94 375.65 130.08 375.06 131.31 361.33 159.93 347.56 131.31 347.01 130.17 347 130.14 343.85 123.59 342.02 119.71 322.83 79.73 316.23 65.94 308.07 48.91 298.74 29.44 284.88 0.57 313.48 0.57 316.23 6.32 322.83 20.11 342.02 60.09 343.85 63.97 347 70.52 347.56 71.68 361.33 100.31 375.06 71.68 375.65 70.46 395.02 30.08 406.42 6.32 409.18 0.57 422.94 29.2 423.49 30.33 423.6 30.1 437.99 60.09 439.82 63.97 442.97 70.52 443.53 71.68 457.3 100.31 471.03 71.68 471.62 70.46 502.39 6.32 505.15 0.57 533.74 0.57"/></svg>
+                <div class="strip"></div>
+                <p>Portfolio</p>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul id="nav">
+                    <li><a href="#profile">Tentang</a></li>
+                    <li><a href="#skill">Skill & Jasa</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#chat">Chat</a></li>
+                    <div class="slider"></div>
+                </ul>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+        <!-- Row 2: mobile nav links, muncul saat hamburger open -->
+        <div class="navbar-row-2" id="navbarRow2">
+            <a href="#profile" class="mobile-nav-link">Tentang</a>
+            <a href="#skill" class="mobile-nav-link">Skill &amp; Jasa</a>
+            <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+            <a href="#chat" class="mobile-nav-link">Chat</a>
+            <div class="slider mobile-slider" id="mobileSlider"></div>
+        </div>
+    </div>
+
+    <!-- ===== PROFILE SECTION ===== -->
+    <div class="profile-section" id="profile">
+        <div class="profile-cards">
+            <div class="profile-image-wrap">
+                <div class="profile-image" id="profileImage"></div>
+            </div>
+            <div class="profile-information">
+                <p class="personal-name" id="personalName">Said Alwi Al-Haddad</p>
+                <div class="founder-row">
+                    <span class="founder-label">Founder Of Community:</span>
+                    <div class="founder-logos">
+                        <!-- ZTT logo -->
+                        <svg class="founder-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 57"><path fill="#fff" d="M70.71,47.57a79.49,79.49,0,0,1-20.44,2.54,79.08,79.08,0,0,1-20.41-2.54A54.3,54.3,0,0,1,13.1,40.11V47a54.55,54.55,0,0,0,16.76,7.47A79.53,79.53,0,0,0,50.27,57a79.93,79.93,0,0,0,20.44-2.53A53.42,53.42,0,0,0,87.42,47v-6.9A53.18,53.18,0,0,1,70.71,47.57Z"/><path fill="#fff" d="M13.73,33.14a12.85,12.85,0,0,1-7-1.95,13.42,13.42,0,0,1-4.9-5.63,20.18,20.18,0,0,1-1.81-9,20.25,20.25,0,0,1,1.81-9A13.39,13.39,0,0,1,6.71,2a12.85,12.85,0,0,1,7-1.95A13,13,0,0,1,20.8,2a13.46,13.46,0,0,1,4.9,5.62,20.39,20.39,0,0,1,1.81,9,20.31,20.31,0,0,1-1.81,9,13.49,13.49,0,0,1-4.9,5.63A13,13,0,0,1,13.73,33.14Zm0-6.23A5.24,5.24,0,0,0,17,25.84a7,7,0,0,0,2.2-3.37,18.26,18.26,0,0,0,.8-5.9,18.37,18.37,0,0,0-.8-5.91A7.05,7.05,0,0,0,17,7.3a5.19,5.19,0,0,0-3.27-1.08,5.13,5.13,0,0,0-3.2,1.08,7.11,7.11,0,0,0-2.25,3.36,17.77,17.77,0,0,0-.82,5.91,17.67,17.67,0,0,0,.82,5.9,7.09,7.09,0,0,0,2.25,3.37A5.18,5.18,0,0,0,13.73,26.91Z"/><polygon fill="#fff" points="77.54 26.09 77.54 32.04 57.31 32.04 57.31 26.09 63.72 26.09 63.72 5.96 57.31 5.96 57.31 0 71.14 0 71.14 26.09 77.54 26.09"/><polygon fill="#fff" points="100.81 0 100.81 5.96 94.41 5.96 94.41 32.04 86.98 32.04 86.98 5.96 80.58 5.96 80.58 0 100.81 0"/><path fill="#fff" d="M118.49,21.84V20.27l8.14-9.94.29.89h-8.3v-2H129V10.8l-8.14,9.94-.27-.88h8.66v2Z"/><path fill="#fff" d="M133.72,19.86h7.11v2h-9.45V9.24h9.2v2h-6.86Zm-.18-5.39h6.27V16.4h-6.27Z"/><path fill="#fff" d="M143.46,21.84V9.24h5.19a7,7,0,0,1,2.87.53,4.05,4.05,0,0,1,1.84,1.54,4.36,4.36,0,0,1,.65,2.41,4,4,0,0,1-2.49,3.9,7,7,0,0,1-2.87.54h-3.87l1-1v4.72Zm2.34-4.47-1-1.13h3.76a3.48,3.48,0,0,0,2.33-.67,2.3,2.3,0,0,0,.78-1.85,2.3,2.3,0,0,0-.78-1.85,3.54,3.54,0,0,0-2.33-.65h-3.76l1-1.16Zm5.91,4.47-3.19-4.58H151l3.21,4.58Z"/><path fill="#fff" d="M162.53,22a7.46,7.46,0,0,1-2.71-.49,6.37,6.37,0,0,1-3.6-3.43,6.53,6.53,0,0,1-.5-2.56,6.64,6.64,0,0,1,.5-2.59,6.26,6.26,0,0,1,1.43-2,6.67,6.67,0,0,1,2.16-1.36,8,8,0,0,1,5.42,0,6.53,6.53,0,0,1,2.15,1.35,6.3,6.3,0,0,1,1.41,2.06,6.55,6.55,0,0,1,.5,2.6,6.27,6.27,0,0,1-4.06,6A7.44,7.44,0,0,1,162.53,22Zm0-2.06a4.54,4.54,0,0,0,1.75-.32,4.26,4.26,0,0,0,1.4-.92,4.21,4.21,0,0,0,.92-1.4,4.52,4.52,0,0,0,.34-1.78,4.71,4.71,0,0,0-.33-1.79,4,4,0,0,0-.92-1.4,4.41,4.41,0,0,0-1.41-.92,4.74,4.74,0,0,0-1.75-.32,4.94,4.94,0,0,0-1.78.32,4.23,4.23,0,0,0-1.41.93,4.63,4.63,0,0,0-.94,4.94,4.41,4.41,0,0,0,.94,1.41,4.08,4.08,0,0,0,1.41.93A4.73,4.73,0,0,0,162.53,20Z"/><path fill="#fff" d="M179.29,21.84V11.22h-4.18v-2H185.8v2h-4.17V21.84Z"/><path fill="#fff" d="M193.47,22a7.54,7.54,0,0,1-2.71-.49,6.41,6.41,0,0,1-2.17-1.37,6.28,6.28,0,0,1-1.42-2.06,6.36,6.36,0,0,1-.5-2.56,6.47,6.47,0,0,1,.5-2.59,6.24,6.24,0,0,1,1.42-2,6.67,6.67,0,0,1,2.16-1.36,8,8,0,0,1,5.42,0,6.34,6.34,0,0,1,2.15,1.35,6.17,6.17,0,0,1,1.42,2.06,6.73,6.73,0,0,1,.5,2.6,6.63,6.63,0,0,1-.5,2.58,6.28,6.28,0,0,1-1.42,2.06,6.21,6.21,0,0,1-2.15,1.36A7.44,7.44,0,0,1,193.47,22Zm0-2.06a4.59,4.59,0,0,0,1.76-.32,4.21,4.21,0,0,0,2.32-2.32,4.7,4.7,0,0,0,.33-1.78,4.91,4.91,0,0,0-.32-1.79,4.18,4.18,0,0,0-.93-1.4,4.26,4.26,0,0,0-1.4-.92,4.79,4.79,0,0,0-1.76-.32,4.84,4.84,0,0,0-1.77.32,4.17,4.17,0,0,0-1.42.93,4.63,4.63,0,0,0-.93,1.4,4.78,4.78,0,0,0,0,3.54,4.55,4.55,0,0,0,.93,1.41,4,4,0,0,0,1.42.93A4.64,4.64,0,0,0,193.47,20Z"/><path fill="#fff" d="M122,45.82V35.2h-4.17v-2h10.69v2h-4.18V45.82Z"/><path fill="#fff" d="M130.28,45.82V33.22h5.19a7,7,0,0,1,2.87.53,4.06,4.06,0,0,1,1.84,1.54,4.28,4.28,0,0,1,.65,2.41,4,4,0,0,1-2.49,3.91,7,7,0,0,1-2.87.54H131.6l1-1v4.72Zm2.34-4.47-1-1.13h3.76a3.48,3.48,0,0,0,2.33-.67,2.58,2.58,0,0,0,0-3.7,3.6,3.6,0,0,0-2.33-.65H131.6l1-1.15Zm5.91,4.47-3.19-4.57h2.5l3.21,4.57Z"/><path fill="#fff" d="M143.44,45.82V33.22h2.34v12.6Z"/><path fill="#fff" d="M149.17,45.82V33.22h2.34V43.84h6.59v2Z"/><path fill="#fff" d="M160,45.82V33.22h2.34V43.84h6.59v2Z"/><path fill="#fff" d="M170.73,45.82V33.22h2.34v12.6Z"/><path fill="#fff" d="M182.36,46a7.33,7.33,0,0,1-2.71-.49,6.5,6.5,0,0,1-2.16-1.36,6.2,6.2,0,0,1-1.43-2.07,6.85,6.85,0,0,1,0-5.14,6.06,6.06,0,0,1,1.43-2.06,6.67,6.67,0,0,1,2.16-1.36,7.42,7.42,0,0,1,2.71-.48,7.58,7.58,0,0,1,2.7.47,6.21,6.21,0,0,1,2.15,1.36,6.08,6.08,0,0,1,1.42,2.06,6.64,6.64,0,0,1,.5,2.59,6.56,6.56,0,0,1-.5,2.58,6.3,6.3,0,0,1-3.57,3.42A7.37,7.37,0,0,1,182.36,46Zm0-2a4.6,4.6,0,0,0,1.76-.33,4.09,4.09,0,0,0,1.39-.91,4.23,4.23,0,0,0,.93-1.41,5,5,0,0,0,0-3.56,4.23,4.23,0,0,0-.93-1.41,4.42,4.42,0,0,0-1.4-.92,4.79,4.79,0,0,0-1.76-.32,4.92,4.92,0,0,0-1.77.32,4,4,0,0,0-1.41.93,4.63,4.63,0,0,0-.94,4.94,4.57,4.57,0,0,0,.94,1.42,3.88,3.88,0,0,0,1.41.92A4.72,4.72,0,0,0,182.36,44Z"/><path fill="#fff" d="M191.62,45.82V33.22h1.92l7.91,9.72h-1V33.22h2.31v12.6h-1.93L193,36.1h.95v9.72Z"/><path fill="#fff" d="M204.42,45.82l5.67-12.6h2.3l5.69,12.6h-2.47l-4.86-11.36h.94l-4.88,11.36ZM207,42.9l.64-1.83h6.79l.63,1.83Z"/><path fill="#fff" d="M219.67,45.82V33.22H222v12.6Z"/><path fill="#fff" d="M225.39,45.82V33.22h5.18a7,7,0,0,1,2.88.53,4.12,4.12,0,0,1,1.84,1.54,4.36,4.36,0,0,1,.65,2.41,4.28,4.28,0,0,1-.65,2.38,4.23,4.23,0,0,1-1.84,1.53,7,7,0,0,1-2.88.54H226.7l1-1v4.72Zm2.34-4.47-1-1.13h3.77a3.48,3.48,0,0,0,2.33-.67,2.58,2.58,0,0,0,0-3.7,3.6,3.6,0,0,0-2.33-.65H226.7l1-1.15Zm5.9,4.47-3.18-4.57H233l3.21,4.57Z"/><path fill="#fff" d="M240.89,43.84H248v2h-9.45V33.22h9.2v2h-6.86Zm-.18-5.38H247v1.92h-6.26Z"/></svg>
+                        <span class="founder-logo-sep"></span>
+                        <!-- PPGIE45 logo -->
+                        <svg class="founder-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 57"><path fill="#fff" d="M25.89,13.31a21.8,21.8,0,0,0-9-1.7H0v39H9.08V39.84h7.79a21.64,21.64,0,0,0,9-1.72,13.46,13.46,0,0,0,5.85-4.88,11.09,11.09,0,0,0,1.1-2.14,14.47,14.47,0,0,0,1-5.4,13.45,13.45,0,0,0-2.06-7.52A13.24,13.24,0,0,0,25.89,13.31ZM16.37,32.49H9.08V19h7.29c2.75,0,4.82.58,6.24,1.76a6.09,6.09,0,0,1,2.11,5,6.18,6.18,0,0,1-2.11,5,6.41,6.41,0,0,1-.52.39A10.15,10.15,0,0,1,16.37,32.49Z"/><path fill="#fff" d="M72.45,18.18a13.24,13.24,0,0,0-5.85-4.87,21.8,21.8,0,0,0-9-1.7H40.71v39h9.07V39.84h7.8a21.64,21.64,0,0,0,9-1.72,13.46,13.46,0,0,0,5.85-4.88,11.09,11.09,0,0,0,1.1-2.14,14.47,14.47,0,0,0,1-5.4A13.54,13.54,0,0,0,72.45,18.18ZM57.08,32.49h-7.3V19h7.3c2.74,0,4.82.58,6.24,1.76a6.09,6.09,0,0,1,2.11,5,6.18,6.18,0,0,1-2.11,5,6.41,6.41,0,0,1-.52.39A10.17,10.17,0,0,1,57.08,32.49Z"/><polygon fill="#fff" points="175.7 43.35 175.7 50.59 145.51 50.59 145.51 11.61 170.74 11.61 173.2 12.96 174.97 16.19 174.97 18.85 154.48 18.85 154.48 27.25 172.58 27.25 172.58 34.33 154.48 34.33 154.48 43.35 175.7 43.35"/><polygon fill="#fff" points="216.13 35.06 216.13 42.41 209.78 42.41 209.78 50.59 200.98 50.59 200.98 42.41 179.98 42.41 179.98 36.33 183.87 31.1 198.36 11.61 207.83 11.61 193.69 31.1 190.82 35.06 201.26 35.06 201.26 27.76 209.78 27.76 209.78 35.06 216.13 35.06"/><path fill="#fff" d="M248,38a11.81,11.81,0,0,1-6.93,10.89,20.26,20.26,0,0,1-9,1.75,30,30,0,0,1-7.91-1.06,20.56,20.56,0,0,1-6.71-3.1L221,39.7a17.88,17.88,0,0,0,5,2.55,18.75,18.75,0,0,0,5.88,1,9.23,9.23,0,0,0,5.29-1.34,4.26,4.26,0,0,0,1.94-3.69,4.34,4.34,0,0,0-.79-2.63,5.26,5.26,0,0,0-2.74-1.73,18.8,18.8,0,0,0-5.45-.63h-9.74l.18-2.08,1.73-19.49H245.7v7.12h-16L229,26.07h3.19a22.78,22.78,0,0,1,9.14,1.53,11,11,0,0,1,4.58,3.5,8.6,8.6,0,0,1,.49.74A11.68,11.68,0,0,1,248,38Z"/><path fill="#fff" d="M99.74,27.05h16V45.8a22.71,22.71,0,0,1-7.28,3.58,28.86,28.86,0,0,1-8.22,1.21,23.8,23.8,0,0,1-8.37-1.42,19.42,19.42,0,0,1-6.63-4.06,19,19,0,0,1-4.35-6.2,19.25,19.25,0,0,1-1.56-7.81,19.25,19.25,0,0,1,1.56-7.81,18.66,18.66,0,0,1,4.41-6.19A20,20,0,0,1,91.93,13a24.21,24.21,0,0,1,8.43-1.42,23.9,23.9,0,0,1,9.17,1.68,18,18,0,0,1,6.87,4.84l-5.64,5.16a14.11,14.11,0,0,0-4.6-3.25A13.68,13.68,0,0,0,100.74,19a13.94,13.94,0,0,0-5,.89,11.47,11.47,0,0,0-4,2.5,11.17,11.17,0,0,0-2.58,3.82,12.91,12.91,0,0,0-.9,4.9,12.76,12.76,0,0,0,.9,4.82,11.1,11.1,0,0,0,2.58,3.85,11.86,11.86,0,0,0,3.94,2.53,13.26,13.26,0,0,0,5,.92,15.68,15.68,0,0,0,5.12-.86,14.37,14.37,0,0,0,1.77-.77V35.15H99.74Z"/><rect fill="#fff" x="126.42" y="11.61" width="9.07" height="38.98"/><polygon fill="#fff" points="185.75 8.59 180.46 11.48 177.57 16.77 174.97 12.03 174.97 11.61 174.75 11.61 174.67 11.48 169.39 8.59 174.67 5.69 177.57 0.41 180.46 5.69 185.75 8.59"/></svg>
+                    </div>
+                </div>
+                <p class="personal-description" id="personalDesc">
+                    "Saya berumur 13 tahun, saya memiliki beberapa banyak skill seperti programming web / app, desain logo, trading crypto / saham, silahkan scroll untuk melihat selengkapnya, serta saya adalah murid dari SMPN 10 Depok, semua skill saya murni otodidak sendiri, tanpa dorongan atau paksaan orang tua pada awalnya, sisanya mereka membantu mengarahkan saya dengan skill yang saya miliki"<span class="desc-cursor">_</span>
+                </p>
+                <div class="social-media-link" id="socialLinks">
+                    <a href="https://x.com/said_alwi61208" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path class="cls-1" d="M23.81,16.94,38.69,0H35.16L22.24,14.71,11.92,0H0l15.6,22.24L0,40H3.54L17.18,24.47,28.08,40H40M4.81,2.6h5.42L35.16,37.52H29.74" fill="#fff"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@saidalwialhaddad" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.78 40"><path d="M50.59,1.19a7.13,7.13,0,0,1,5,5.06C56.79,10.7,56.79,20,56.79,20s0,9.3-1.19,13.75a7.13,7.13,0,0,1-5,5.06C46.16,40,28.4,40,28.4,40S10.65,40,6.22,38.81a7.16,7.16,0,0,1-5-5.06C0,29.3,0,20,0,20S0,10.7,1.2,6.25a7.16,7.16,0,0,1,5-5.06C10.65,0,28.4,0,28.4,0S46.16,0,50.59,1.19Zm-28,27.25L37.44,20,22.6,11.56V28.44Z" fill="#fff"/></svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@saidalwyalhaddad" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.54 40"><path d="M25.1,0H18.7V27.17A5.57,5.57,0,0,1,13,33a5.74,5.74,0,0,1-5.87-5.86c0-4.11,3.21-6.28,7.5-5.83V14.45a11.41,11.41,0,0,0-1.76-.14,12.85,12.85,0,1,0,0,25.69,12.78,12.78,0,0,0,12.9-13.28V12.58c2.76,2.77,6.11,3.63,9.71,3.63V9.85A11.2,11.2,0,0,1,25.1,0Z" fill="#fff"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/said.alwi.alhaddad/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M13.32,20A6.67,6.67,0,1,1,20,26.67,6.67,6.67,0,0,1,13.32,20Zm-3.6,0A10.27,10.27,0,1,0,20,9.73,10.27,10.27,0,0,0,9.72,20ZM28.24,9.31a2.4,2.4,0,1,0,2.4-2.4A2.39,2.39,0,0,0,28.24,9.31Zm-16.3,27a11.07,11.07,0,0,1-3.72-.68,6.18,6.18,0,0,1-2.3-1.49,6.12,6.12,0,0,1-1.5-2.3,11.32,11.32,0,0,1-.7-3.71C3.62,26,3.6,25.37,3.59,20s0-6,.1-8.08a11.2,11.2,0,0,1,.68-3.71,6.28,6.28,0,0,1,1.5-2.31,6.21,6.21,0,0,1,2.29-1.5,11.25,11.25,0,0,1,3.71-.69c2.11-.1,2.75-.12,8.08-.13s6,0,8.09.1a10.69,10.69,0,0,1,3.71.68,6.1,6.1,0,0,1,2.3,1.49,6.12,6.12,0,0,1,1.5,2.3,10.8,10.8,0,0,1,.7,3.71c.1,2.11.12,2.74.13,8.08s0,6-.1,8.08a11.34,11.34,0,0,1-.68,3.72,6.18,6.18,0,0,1-1.49,2.3,6.33,6.33,0,0,1-2.3,1.5,11.13,11.13,0,0,1-3.71.69c-2.11.1-2.74.12-8.08.13s-6,0-8.08-.1ZM11.7.14a14.59,14.59,0,0,0-4.85.94A9.84,9.84,0,0,0,3.31,3.39,9.76,9.76,0,0,0,1,6.94a14.85,14.85,0,0,0-.92,4.85C0,13.93,0,14.61,0,20s0,6.11.14,8.24a14.94,14.94,0,0,0,.93,4.86,9.84,9.84,0,0,0,2.32,3.53A9.81,9.81,0,0,0,6.92,39a14.71,14.71,0,0,0,4.86.92c2.13.1,2.81.12,8.24.11s6.12,0,8.25-.14a14.53,14.53,0,0,0,4.85-.94A10.2,10.2,0,0,0,39,33.06a14.59,14.59,0,0,0,.92-4.85C40,26.07,40,25.39,40,20s0-6.11-.13-8.24a14.65,14.65,0,0,0-.94-4.86A9.81,9.81,0,0,0,36.6,3.33,9.72,9.72,0,0,0,33.05,1,14.65,14.65,0,0,0,28.19.11C26.06,0,25.38,0,20,0S13.84,0,11.7.14Z" fill="#fff"/></svg>
+                    </a>
+                    <a href="https://opensea.io/saidalw18" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0ZM9.88,20.68l.08-.12,5.2-8.12a.18.18,0,0,1,.32,0c.88,2,1.6,4.36,1.28,5.88a8.48,8.48,0,0,1-1,2.24.87.87,0,0,1-.2.32.21.21,0,0,1-.16.08H10A.22.22,0,0,1,9.88,20.68ZM33,23.48c0,.08,0,.12-.12.16a6.14,6.14,0,0,0-2.36,1.6c-1.48,2-2.6,5-5.08,5H15a6.7,6.7,0,0,1-6.68-6.72v-.12a.17.17,0,0,1,.16-.16H14.4a.21.21,0,0,1,.2.2,2.23,2.23,0,0,0,.2,1.12,2,2,0,0,0,1.84,1.12h2.88V23.4H16.68a.18.18,0,0,1-.16-.28.55.55,0,0,0,.12-.16c.28-.4.64-1,1-1.64a9.68,9.68,0,0,0,.72-1.44,2,2,0,0,0,.12-.28c0-.16.12-.32.16-.44l.12-.36a6.74,6.74,0,0,0,.12-1.32,2.83,2.83,0,0,0,0-.56c0-.2,0-.4,0-.6a2.34,2.34,0,0,0-.08-.52,5.66,5.66,0,0,0-.16-.8l0-.08a2.59,2.59,0,0,0-.16-.52,14.92,14.92,0,0,0-.56-1.6l-.24-.6c-.12-.28-.24-.56-.36-.8s-.12-.2-.16-.32-.12-.24-.16-.36l-.12-.24-.36-.64c0-.08,0-.2.12-.16l2.2.6.28.08.32.08.12,0V9.16A1.15,1.15,0,0,1,20.6,8a1.09,1.09,0,0,1,1.12,1.12V11l.24.08a0,0,0,0,1,0,0,1.52,1.52,0,0,0,.24.2,1.74,1.74,0,0,0,.28.24l.76.64c.08.08.16.12.2.2a15.83,15.83,0,0,1,1.16,1.16c.12.12.2.24.32.36s.2.28.32.4l.4.52a1.74,1.74,0,0,1,.16.28c.16.24.28.48.44.72s.12.24.16.36a2.93,2.93,0,0,1,.32,1,.43.43,0,0,1,0,.2.78.78,0,0,1,0,.32,4.53,4.53,0,0,1,0,1c0,.16-.08.28-.12.44a3,3,0,0,1-.16.44,8.46,8.46,0,0,1-.44.84,3.69,3.69,0,0,1-.2.32,1.4,1.4,0,0,0-.2.32c-.08.12-.2.24-.28.36a2.2,2.2,0,0,1-.28.36c-.12.16-.28.32-.4.48a1.85,1.85,0,0,1-.28.28,1.85,1.85,0,0,1-.28.28,2.59,2.59,0,0,1-.36.32l-.24.2a.15.15,0,0,1-.12,0H21.68v2.24h2.2a2,2,0,0,0,1.32-.48c.12-.12.68-.6,1.36-1.32,0,0,0,0,.08,0l6.08-1.76c.24-.12.32,0,.32.08Z" fill="#fff"/></svg>
+                    </a>
+                    <a href="https://www.fiverr.com/s/R7pqodR" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Zm4.87,10.66a2.12,2.12,0,1,1-2.11,2.11A2.11,2.11,0,0,1,24.86,10.66Zm3.86,18.68H21V26.17h1.64v-6.7H17.39v6.7h1.93v3.18h-8V26.17H13v-6.7H11.25V16.3H13v-.54c0-4.28,3.73-4.85,5.76-4.85a11.53,11.53,0,0,1,1.55.1v3.43a5.77,5.77,0,0,0-1.06-.07c-.63,0-1.88,0-1.88,1.27v.63h9.68v9.9h1.65Z" fill="#fff"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== SKILL SECTION ===== -->
+    <div class="skill-section" id="skill">
+        <div class="skill-section-header">
+            <div class="title-section">Skill&nbsp;Saya:</div>
+        </div>
+
+        <div class="skill-slider-wrap">
+            <div class="skill-slides">
+
+                <!-- Slide 1: Programming -->
+                <div class="skill-slide active" data-index="0">
+                    <div class="skill-slide-media">
+                        <div class="skill-media-inner"></div>
+                    </div>
+                    <div class="skill-slide-info">
+                        <div class="skill-icon-label">
+                            <span class="skill-icon-text">&lt;/&gt;</span>
+                            <span class="skill-title-text">Programming</span>
+                        </div>
+                        <p class="skill-detail-desc">
+                            Saya telah mempelajari coding dari umur 6 tahun di 2017. Skill coding yang saya kuasai meliputi HTML, CSS, JavaScript, Python, dan C++. Setiap proyek dikerjakan dengan pendekatan yang terstruktur, berorientasi pada performa dan tampilan yang bersih. Kemampuan ini terus diasah melalui proyek nyata dan eksplorasi mandiri secara konsisten.
+                        </p>
+                        <a class="hire-btn" href="https://www.fiverr.com/s/R7pqodR" target="_blank">Hire</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Musik -->
+                <div class="skill-slide" data-index="1">
+                    <div class="skill-slide-media">
+                        <div class="skill-media-inner"></div>
+                    </div>
+                    <div class="skill-slide-info">
+                        <div class="skill-icon-label">
+                            <span class="skill-icon-text">♪</span>
+                            <span class="skill-title-text">Musik</span>
+                        </div>
+                        <p class="skill-detail-desc">
+                            Musik menjadi media saya untuk menyalurkan kreativitas sekaligus melatih konsistensi latihan. Saya mempelajari dasar ritme dan harmoni secara bertahap melalui praktik rutin. Proses tersebut membantu membangun ketelitian dan disiplin dalam mengasah kemampuan secara mandiri.
+                        </p>
+                        <a class="hire-btn" href="https://www.fiverr.com/s/R7pqodR" target="_blank">Hire</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Desain Logo -->
+                <div class="skill-slide" data-index="2">
+                    <div class="skill-slide-media">
+                        <div class="skill-media-inner"></div>
+                    </div>
+                    <div class="skill-slide-info">
+                        <div class="skill-icon-label">
+                            <span class="skill-icon-text">◈</span>
+                            <span class="skill-title-text">Desain Logo</span>
+                        </div>
+                        <p class="skill-detail-desc">
+                            Saya mengembangkan kemampuan desain logo dengan memahami konsep identitas visual dan kesederhanaan bentuk. Fokus saya adalah membuat desain yang bersih, mudah diingat, dan memiliki makna yang jelas. Setiap karya dirancang dengan mempertimbangkan keseimbangan visual dan karakter brand.
+                        </p>
+                        <a class="hire-btn" href="https://www.fiverr.com/s/R7pqodR" target="_blank">Hire</a>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Catur -->
+                <div class="skill-slide" data-index="3">
+                    <div class="skill-slide-media">
+                        <div class="skill-media-inner"></div>
+                    </div>
+                    <div class="skill-slide-info">
+                        <div class="skill-icon-label">
+                            <span class="skill-icon-text">♟</span>
+                            <span class="skill-title-text">Catur</span>
+                        </div>
+                        <p class="skill-detail-desc">
+                            Catur melatih saya berpikir beberapa langkah ke depan sebelum mengambil keputusan. Saya terbiasa menganalisis posisi secara strategis dan mempertimbangkan risiko setiap langkah. Permainan ini memperkuat pola pikir logis serta kemampuan perencanaan jangka panjang.
+                        </p>
+                        <a class="hire-btn" href="#chat">Konsultasi</a>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Editor Konten -->
+                <div class="skill-slide" data-index="4">
+                    <div class="skill-slide-media">
+                        <div class="skill-media-inner"></div>
+                    </div>
+                    <div class="skill-slide-info">
+                        <div class="skill-icon-label">
+                            <span class="skill-icon-text">▶</span>
+                            <span class="skill-title-text">Editor Konten</span>
+                        </div>
+                        <p class="skill-detail-desc">
+                            Saya mengembangkan kemampuan editing dengan fokus pada kejelasan pesan dan struktur penyampaian. Proses penyuntingan saya lakukan dengan memperhatikan detail visual maupun alur narasi. Tujuannya adalah menghasilkan konten yang ringkas, informatif, dan tetap menarik.
+                        </p>
+                        <a class="hire-btn" href="https://www.fiverr.com/s/R7pqodR" target="_blank">Hire</a>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Trading Crypto -->
+                <div class="skill-slide" data-index="5">
+                    <div class="skill-slide-media">
+                        <div class="skill-media-inner"></div>
+                    </div>
+                    <div class="skill-slide-info">
+                        <div class="skill-icon-label">
+                            <span class="skill-icon-text">₿</span>
+                            <span class="skill-title-text">Trading Crypto</span>
+                        </div>
+                        <p class="skill-detail-desc">
+                            Saya mempelajari trading crypto dengan pendekatan analisis dan manajemen risiko yang disiplin. Fokus utama saya adalah konsistensi serta evaluasi performa dalam jangka panjang. Setiap keputusan diambil berdasarkan perhitungan dan strategi yang terukur.
+                        </p>
+                        <a class="hire-btn" href="#chat">Konsultasi</a>
+                    </div>
+                </div>
+
+            </div><!-- end .skill-slides -->
+
+            <!-- Vertical pagination -->
+            <div class="skill-pagination">
+                <div class="page-dot active" data-goto="0">1</div>
+                <div class="page-dot" data-goto="1">2</div>
+                <div class="page-dot" data-goto="2">3</div>
+                <div class="page-dot" data-goto="3">4</div>
+                <div class="page-dot" data-goto="4">5</div>
+                <div class="page-dot" data-goto="5">6</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <div class="portfolio-section" id="portfolio">
+        <div class="portfolio-header">
+            <div class="portfolio-title">Portfolio Saya:</div>
+            <div class="portfolio-tabs">
+                <div class="ptab active" data-tab="coding">Coding</div>
+                <div class="ptab" data-tab="musik">Musik</div>
+                <div class="ptab" data-tab="logo">Desain Logo</div>
+                <div class="ptab" data-tab="catur">Catur</div>
+                <div class="ptab" data-tab="editing">Editing Konten</div>
+                <div class="ptab" data-tab="trading">Trading Crypto / Saham</div>
+                <div class="ptab-slider"></div>
+            </div>
+        </div>
+
+        <div class="portfolio-content-area">
+            <div class="portfolio-panel active" data-panel="coding">
+                <div class="portfolio-empty">
+                    <span class="empty-icon">&lt;/&gt;</span>
+                    <p>Proyek coding akan ditampilkan di sini</p>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="musik">
+                <div class="portfolio-empty">
+                    <span class="empty-icon">♪</span>
+                    <p>Karya musik akan ditampilkan di sini</p>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="logo">
+                <div class="portfolio-empty">
+                    <span class="empty-icon">◈</span>
+                    <p>Desain logo akan ditampilkan di sini</p>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="catur">
+                <div class="portfolio-empty">
+                    <span class="empty-icon">♟</span>
+                    <p>Pencapaian catur akan ditampilkan di sini</p>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="editing">
+                <div class="portfolio-empty">
+                    <span class="empty-icon">▶</span>
+                    <p>Karya editing akan ditampilkan di sini</p>
+                </div>
+            </div>
+            <div class="portfolio-panel" data-panel="trading">
+                <div class="portfolio-empty">
+                    <span class="empty-icon">₿</span>
+                    <p>Riwayat trading akan ditampilkan di sini</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CHAT SECTION ===== -->
+    <div class="chat-section" id="chat">
+        <div class="chat-inner">
+            <div class="chat-title">Chat</div>
+            <p class="chat-subtitle">Hubungi saya untuk kolaborasi atau pertanyaan</p>
+            <div class="chat-links">
+                <a href="https://www.instagram.com/said.alwi.alhaddad/" class="chat-link" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="20"><path d="M13.32,20A6.67,6.67,0,1,1,20,26.67,6.67,6.67,0,0,1,13.32,20Zm-3.6,0A10.27,10.27,0,1,0,20,9.73,10.27,10.27,0,0,0,9.72,20ZM28.24,9.31a2.4,2.4,0,1,0,2.4-2.4A2.39,2.39,0,0,0,28.24,9.31Zm-16.3,27a11.07,11.07,0,0,1-3.72-.68,6.18,6.18,0,0,1-2.3-1.49,6.12,6.12,0,0,1-1.5-2.3,11.32,11.32,0,0,1-.7-3.71C3.62,26,3.6,25.37,3.59,20s0-6,.1-8.08a11.2,11.2,0,0,1,.68-3.71,6.28,6.28,0,0,1,1.5-2.31,6.21,6.21,0,0,1,2.29-1.5,11.25,11.25,0,0,1,3.71-.69c2.11-.1,2.75-.12,8.08-.13s6,0,8.09.1a10.69,10.69,0,0,1,3.71.68,6.1,6.1,0,0,1,2.3,1.49,6.12,6.12,0,0,1,1.5,2.3,10.8,10.8,0,0,1,.7,3.71c.1,2.11.12,2.74.13,8.08s0,6-.1,8.08a11.34,11.34,0,0,1-.68,3.72,6.18,6.18,0,0,1-1.49,2.3,6.33,6.33,0,0,1-2.3,1.5,11.13,11.13,0,0,1-3.71.69c-2.11.1-2.74.12-8.08.13s-6,0-8.08-.1ZM11.7.14a14.59,14.59,0,0,0-4.85.94A9.84,9.84,0,0,0,3.31,3.39,9.76,9.76,0,0,0,1,6.94a14.85,14.85,0,0,0-.92,4.85C0,13.93,0,14.61,0,20s0,6.11.14,8.24a14.94,14.94,0,0,0,.93,4.86,9.84,9.84,0,0,0,2.32,3.53A9.81,9.81,0,0,0,6.92,39a14.71,14.71,0,0,0,4.86.92c2.13.1,2.81.12,8.24.11s6.12,0,8.25-.14a14.53,14.53,0,0,0,4.85-.94A10.2,10.2,0,0,0,39,33.06a14.59,14.59,0,0,0,.92-4.85C40,26.07,40,25.39,40,20s0-6.11-.13-8.24a14.65,14.65,0,0,0-.94-4.86A9.81,9.81,0,0,0,36.6,3.33,9.72,9.72,0,0,0,33.05,1,14.65,14.65,0,0,0,28.19.11C26.06,0,25.38,0,20,0S13.84,0,11.7.14Z" fill="#fff"/></svg>
+                    Instagram
+                </a>
+                <a href="https://x.com/said_alwi61208" class="chat-link" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="16"><path d="M23.81,16.94,38.69,0H35.16L22.24,14.71,11.92,0H0l15.6,22.24L0,40H3.54L17.18,24.47,28.08,40H40M4.81,2.6h5.42L35.16,37.52H29.74" fill="#fff"/></svg>
+                    X / Twitter
+                </a>
+                <a href="https://www.fiverr.com/s/R7pqodR" class="chat-link" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="20"><path d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Zm4.87,10.66a2.12,2.12,0,1,1-2.11,2.11A2.11,2.11,0,0,1,24.86,10.66Zm3.86,18.68H21V26.17h1.64v-6.7H17.39v6.7h1.93v3.18h-8V26.17H13v-6.7H11.25V16.3H13v-.54c0-4.28,3.73-4.85,5.76-4.85a11.53,11.53,0,0,1,1.55.1v3.43a5.77,5.77,0,0,0-1.06-.07c-.63,0-1.88,0-1.88,1.27v.63h9.68v9.9h1.65Z" fill="#fff"/></svg>
+                    Fiverr
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div><!-- end .container -->
+
+<!-- Background lava lamp — bubble dihasilkan via JS -->
+<div class="animation-area" id="animationArea"></div>
+
+<script>
+/* =================================================================
+   ANIMASI ENTRY — langsung tanpa splash screen
+================================================================= */
+(function () {
+
+    const navbar      = document.getElementById('navbar');
+    const navbarLogo  = document.getElementById('navbarLogo');
+    const navLinks    = document.getElementById('navLinks');
+    const profileImg  = document.getElementById('profileImage');
+    const personName  = document.getElementById('personalName');
+    const founderRow  = document.querySelector('.founder-row');
+    const socialLinks = document.getElementById('socialLinks');
+    const personDesc  = document.getElementById('personalDesc');
+    const ham         = document.getElementById('hamburger');
+
+    /* Set state awal tersembunyi */
+    navbar.style.opacity = '0';
+    navbarLogo.style.opacity = '0';
+    profileImg.style.opacity = '0';
+    personName.style.opacity = '0';
+    if (founderRow) founderRow.style.opacity = '0';
+    socialLinks.style.opacity = '0';
+    personDesc.style.opacity = '0';
+
+    /* Langsung jalankan animasi entry */
+    navbarLogo.style.opacity = '1';
+    navbar.style.opacity     = '1';
+    navbar.classList.add('navbar-enter');
+    navLinks.classList.add('navlinks-enter');
+    navLinks.addEventListener('animationend', () => {
+        navLinks.style.opacity = '1';
+        navLinks.style.transform = 'translateY(0)';
+        navLinks.classList.remove('navlinks-enter');
+    }, { once: true });
+    ham.classList.add('hamburger-enter');
+
+    setTimeout(() => { profileImg.classList.add('profile-img-enter'); }, 100);
+    setTimeout(() => { personName.classList.add('slide-from-right'); }, 200);
+    setTimeout(() => { if (founderRow) founderRow.classList.add('slide-from-right'); }, 290);
+    setTimeout(() => { personDesc.classList.add('slide-from-right'); }, 380);
+    setTimeout(() => { socialLinks.classList.add('slide-from-right'); }, 500);
+
+})();
+
+/* ===== NAVBAR SLIDER ===== */
+const nav   = document.querySelector("#nav");
+const links = document.querySelectorAll("#nav li a");
+const slider = document.querySelector(".slider");
+let defaultLink = links[0];
+
+function setActive(link) {
+    links.forEach(l => l.classList.remove("active"));
+    link.classList.add("active");
+}
+
+function moveSlider(link) {
+    const rect   = link.getBoundingClientRect();
+    const ulRect = nav.getBoundingClientRect();
+    slider.style.width     = rect.width + "px";
+    slider.style.left      = "0px";
+    slider.style.transform = `translateX(${rect.left - ulRect.left}px)`;
+    setActive(link);
+}
+
+links.forEach(link => {
+    link.addEventListener("mouseenter", () => moveSlider(link));
+    link.addEventListener("click", () => { defaultLink = link; moveSlider(link); });
+});
+
+nav.addEventListener("mouseleave", () => moveSlider(defaultLink));
+
+/* Tunggu font selesai load baru hitung posisi slider,
+   supaya getBoundingClientRect() dapat lebar teks yang akurat */
+document.fonts.ready.then(() => {
+    moveSlider(defaultLink);
+});
+
+const sections = [
+    { id: 'profile',   link: links[0], mobileIdx: 0 },
+    { id: 'skill',     link: links[1], mobileIdx: 1 },
+    { id: 'portfolio', link: links[2], mobileIdx: 2 },
+    { id: 'chat',      link: links[3], mobileIdx: 3 },
+];
+
+const sectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const found = sections.find(s => s.id === entry.target.id);
+            if (found) {
+                defaultLink     = found.link;
+                activeMobileIdx = found.mobileIdx;
+                moveSlider(found.link);
+            }
+        }
+    });
+}, { threshold: 0.4 });
+
+sections.forEach(s => {
+    const el = document.getElementById(s.id);
+    if (el) sectionObserver.observe(el);
+});
+
+/* ===== SKILL SLIDER — 3D SWIPE + CHARACTER SCRAMBLE ===== */
+(function () {
+    const slides = Array.from(document.querySelectorAll('.skill-slide'));
+    const dots   = Array.from(document.querySelectorAll('.page-dot'));
+    const N      = slides.length;
+    let current  = 0;
+    let busy     = false;
+
+    const MOBILE_BP = 768;
+    function isMobile() { return window.innerWidth <= MOBILE_BP; }
+
+    /* ---- Arrow ---- */
+    const arrow = document.createElement('span');
+    arrow.className = 'dot-arrow';
+    arrow.style.opacity = '0';
+
+    function updateArrowChar() {
+        arrow.textContent = isMobile() ? '▲' : '▶';
+        arrow.className   = 'dot-arrow ' + (isMobile() ? 'arrow-below' : 'arrow-left');
+    }
+    function attachArrow(dotEl) {
+        updateArrowChar();
+        dotEl.appendChild(arrow);
+        requestAnimationFrame(() => requestAnimationFrame(() => { arrow.style.opacity = '1'; }));
+    }
+    function moveArrow(toDot) {
+        arrow.style.opacity = '0';
+        setTimeout(() => {
+            updateArrowChar();
+            toDot.appendChild(arrow);
+            requestAnimationFrame(() => { arrow.style.opacity = '1'; });
+        }, 200);
+    }
+    window.addEventListener('resize', updateArrowChar);
+    attachArrow(dots[0]);
+
+    /* ---- Scramble engine ---- */
+    const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#%^&*<>/|~=+';
+
+    let activeTimers = [];
+
+    function clearTimers() {
+        activeTimers.forEach(id => cancelAnimationFrame(id));
+        activeTimers = [];
+    }
+
+    /* Easing: ease-out cubic */
+    function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+
+    function scrambleElement(el, target, delayMs) {
+        const DURATION = 580; /* ms */
+
+        /* Tiap karakter dapat lock-time acak sendiri di rentang 25%–95% durasi */
+        const lockTimes = Array.from({ length: target.length }, (_, i) => {
+            if (target[i] === ' ') return 0;
+            /* Distribusi: lebih banyak karakter lock di pertengahan–akhir */
+            const base = (i / Math.max(target.length - 1, 1)) * 0.55 + 0.20;
+            return base + (Math.random() - 0.5) * 0.28;
+        });
+
+        /* Tiap karakter punya char pool kecilnya sendiri yang berganti tiap ~3 frame */
+        const charCycle = Array.from({ length: target.length }, () => ({
+            val: CHARS[Math.floor(Math.random() * CHARS.length)],
+            tick: 0,
+            speed: Math.floor(Math.random() * 3) + 1, /* ganti tiap 1–3 frame */
+        }));
+
+        let startTime = null;
+        let rafId;
+
+        function tick(ts) {
+            if (!startTime) startTime = ts;
+            const elapsed  = ts - startTime;
+            const rawT     = Math.min(elapsed / DURATION, 1);
+            const t        = easeOut(rawT);
+
+            /* Opacity slide: dim saat awal scramble, normal saat selesai */
+            const opacityVal = 0.45 + t * 0.55;
+            el.style.opacity = opacityVal;
+
+            let out = '';
+            for (let i = 0; i < target.length; i++) {
+                if (target[i] === ' ') { out += ' '; continue; }
+
+                const locked = t >= lockTimes[i];
+                if (locked) {
+                    out += target[i];
+                } else {
+                    /* Makin dekat lock, makin jarang ganti karakter */
+                    const proximity = t / lockTimes[i];
+                    charCycle[i].tick++;
+                    const threshold = Math.ceil(charCycle[i].speed * (1 + proximity * 3));
+                    if (charCycle[i].tick >= threshold) {
+                        charCycle[i].val  = CHARS[Math.floor(Math.random() * CHARS.length)];
+                        charCycle[i].tick = 0;
+                    }
+                    out += charCycle[i].val;
+                }
+            }
+
+            el.textContent = out;
+
+            if (rawT < 1) {
+                rafId = requestAnimationFrame(tick);
+                activeTimers = activeTimers.filter(x => x !== rafId);
+                activeTimers.push(rafId);
+            } else {
+                el.textContent = target;
+                el.style.opacity = '';
+            }
+        }
+
+        if (delayMs > 0) {
+            const tid = setTimeout(() => {
+                rafId = requestAnimationFrame(tick);
+                activeTimers.push(rafId);
+            }, delayMs);
+            activeTimers.push(tid);
+        } else {
+            rafId = requestAnimationFrame(tick);
+            activeTimers.push(rafId);
+        }
+    }
+
+    function scrambleSlide(slideEl) {
+        const iconEl  = slideEl.querySelector('.skill-icon-text');
+        const titleEl = slideEl.querySelector('.skill-title-text');
+        const descEl  = slideEl.querySelector('.skill-detail-desc');
+        const btnEl   = slideEl.querySelector('.hire-btn');
+
+        const icon  = iconEl.textContent;
+        const title = titleEl.textContent;
+        const desc  = descEl.textContent.trim();
+        const btn   = btnEl.textContent.trim();
+
+        slideEl.classList.add('skill-scrambling');
+        slideEl.classList.remove('skill-scramble-done');
+
+        /* Stagger ringan antar elemen biar ga mulai barengan semua */
+        scrambleElement(iconEl,  icon,  0);
+        scrambleElement(titleEl, title, 40);
+        scrambleElement(descEl,  desc,  90);
+        scrambleElement(btnEl,   btn,   60);
+
+        setTimeout(() => {
+            slideEl.classList.remove('skill-scrambling');
+            slideEl.classList.add('skill-scramble-done');
+        }, 640);
+    }
+
+    /* ---- Slide transition ---- */
+    function goToSlide(n) {
+        if (busy) return;
+        const next = ((n % N) + N) % N;
+        if (next === current) return;
+
+        busy = true;
+        clearTimers();
+
+        let diff = next - current;
+        if (diff >  N / 2) diff -= N;
+        if (diff < -N / 2) diff += N;
+        const dir = diff > 0 ? 1 : -1;
+
+        const outSlide = slides[current];
+        const inSlide  = slides[next];
+
+        dots[current].classList.remove('active');
+        dots[next].classList.add('active');
+        moveArrow(dots[next]);
+
+        /* Exit slide lama */
+        outSlide.classList.remove('active');
+        outSlide.classList.add(dir > 0 ? 'exit-left' : 'exit-right');
+
+        /* Posisikan slide baru tanpa transisi, lalu aktifkan */
+        inSlide.classList.add(dir > 0 ? 'enter-from-right' : 'enter-from-left');
+        inSlide.getBoundingClientRect(); /* force reflow */
+
+        requestAnimationFrame(() => {
+            inSlide.classList.remove('enter-from-right', 'enter-from-left');
+            inSlide.classList.add('active');
+
+            /* Scramble teks di slide yang masuk, sedikit delay biar 3D rotate keliatan */
+            setTimeout(() => scrambleSlide(inSlide), 80);
+        });
+
+        setTimeout(() => {
+            outSlide.classList.remove('exit-left', 'exit-right');
+            outSlide.classList.remove('skill-scrambling', 'skill-scramble-done');
+            current = next;
+            busy    = false;
+        }, 650);
+    }
+
+    dots.forEach(dot => dot.addEventListener('click', () => goToSlide(+dot.dataset.goto)));
+})();
+
+/* ===== PORTFOLIO TABS ===== */
+const ptabs      = document.querySelectorAll('.ptab');
+const ppanels    = document.querySelectorAll('.portfolio-panel');
+const ptabSlider = document.querySelector('.ptab-slider');
+
+function movePTabSlider(tab) {
+    const rect       = tab.getBoundingClientRect();
+    const parentRect = tab.closest('.portfolio-tabs').getBoundingClientRect();
+    ptabSlider.style.width     = rect.width + "px";
+    ptabSlider.style.transform = `translateX(${rect.left - parentRect.left}px)`;
+}
+
+ptabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        ptabs.forEach(t => t.classList.remove('active'));
+        ppanels.forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        const panel = document.querySelector(`.portfolio-panel[data-panel="${tab.dataset.tab}"]`);
+        if (panel) panel.classList.add('active');
+        movePTabSlider(tab);
+    });
+});
+
+setTimeout(() => {
+    const activeTab = document.querySelector('.ptab.active');
+    if (activeTab) movePTabSlider(activeTab);
+}, 100);
+
+document.fonts.ready.then(() => {
+    const activeTab = document.querySelector('.ptab.active');
+    if (activeTab) movePTabSlider(activeTab);
+});
+
+/* ===== HAMBURGER MENU ===== */
+const hamburger    = document.getElementById("hamburger");
+const mobileOverlay = document.getElementById("navbarRow2");
+
+/* ===== MOBILE NAV SLIDER ===== */
+const mobileLinks  = Array.from(document.querySelectorAll('.mobile-nav-link'));
+const mobileSlider = document.getElementById('mobileSlider');
+const mobileRow    = document.getElementById('navbarRow2');
+let activeMobileIdx = 0;
+
+function moveMobileSlider(linkEl) {
+    if (!mobileSlider || !mobileRow || !linkEl) return;
+    const rect    = linkEl.getBoundingClientRect();
+    const rowRect = mobileRow.getBoundingClientRect();
+    mobileSlider.style.width     = rect.width + 'px';
+    mobileSlider.style.left      = '0px';
+    mobileSlider.style.transform = `translateX(${rect.left - rowRect.left}px)`;
+    mobileLinks.forEach(l => l.style.color = 'rgba(255,255,255,0.7)');
+    linkEl.style.color = 'rgba(255,255,255,1)';
+}
+
+function syncMobileSlider() {
+    /* Tunggu menu terbuka dan elemen terrender */
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            moveMobileSlider(mobileLinks[activeMobileIdx]);
+        });
+    });
+}
+
+mobileLinks.forEach((link, i) => {
+    link.addEventListener('click', () => {
+        activeMobileIdx = i;
+        moveMobileSlider(link);
+    });
+});
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("open");
+    document.getElementById("navbar").classList.toggle("nav-open");
+    document.body.classList.toggle("nav-open");
+    /* Sync slider setelah menu animate-in */
+    if (document.getElementById("navbar").classList.contains("nav-open")) {
+        syncMobileSlider();
+    }
+});
+
+document.querySelectorAll(".mobile-nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        hamburger.classList.remove("open");
+        document.getElementById("navbar").classList.remove("nav-open");
+        document.body.classList.remove("nav-open");
+    });
+});
+
+/* ===== LAVA LAMP BACKGROUND ===== */
+(function () {
+    const area = document.getElementById('animationArea');
+    if (!area) return;
+
+    /*
+     * 2 warna dasar:
+     *   BG  : #000900 — hijau hampir hitam (background container)
+     *   BLOB: #01240d — hijau gelap (warna box lama)
+     * Bubble dibuat dengan variasi opacity dan mix kedua warna ini.
+     */
+
+    /* Utility: random dalam range [min, max] */
+    function rnd(min, max) {
+        return min + Math.random() * (max - min);
+    }
+
+    /* Utility: random integer dalam range [min, max] */
+    function rndInt(min, max) {
+        return Math.floor(rnd(min, max + 1));
+    }
+
+    /* Pilih secara random antara warna blob atau sedikit lebih terang dari bg */
+    const colors = [
+        '#01240d',  /* warna blob utama */
+        '#012e0f',  /* sedikit lebih terang */
+        '#01380f',  /* lebih terang lagi untuk variasi */
+        '#011a08',  /* lebih gelap dari blob */
+        '#023010',  /* variasi hijau */
+    ];
+
+    /* Keyframe names yang ada di CSS */
+    const keyframes = [
+        'lava-float-1',
+        'lava-float-2',
+        'lava-float-3',
+        'lava-float-4',
+    ];
+
+    /* Jumlah bubble */
+    const BUBBLE_COUNT = 9;
+
+    for (let i = 0; i < BUBBLE_COUNT; i++) {
+        const el = document.createElement('div');
+        el.classList.add('lava-bubble');
+
+        /* Ukuran: bubble besar untuk efek lava lamp yang nyata */
+        const size = rnd(220, 520); /* px */
+
+        /* Posisi awal: random di seluruh layar (bisa sedikit keluar tepi) */
+        const startX = rnd(-10, 90);  /* % dari viewport width */
+        const startY = rnd(-10, 90);  /* % dari viewport height */
+
+        /* Warna random dari palet */
+        const color = colors[rndInt(0, colors.length - 1)];
+
+        /* Opacity: tidak terlalu solid agar blend dengan background */
+        const opacity = rnd(0.55, 0.9);
+
+        /* Durasi animasi: bervariasi supaya gerakannya tidak sinkron */
+        const duration = rnd(10, 22); /* detik */
+
+        /* Delay: supaya tiap bubble mulai di titik berbeda */
+        const delay = rnd(0, -15);    /* negatif = mulai di tengah siklus */
+
+        /* Pilih keyframe random */
+        const kf = keyframes[rndInt(0, keyframes.length - 1)];
+
+        /* Generate 4 set delta random untuk keyframe path */
+        function rndDelta() {
+            /* Gerak dalam jangkauan: cukup jauh tapi tidak teleport */
+            const range = rnd(80, 280);
+            const dx = rnd(-range, range);
+            const dy = rnd(-range, range);
+            const scale = rnd(0.75, 1.35);
+            return { dx, dy, scale };
+        }
+
+        const d1 = rndDelta();
+        const d2 = rndDelta();
+        const d3 = rndDelta();
+        const d4 = rndDelta();
+
+        /* Terapkan semua style */
+        el.style.cssText = [
+            `width: ${size}px`,
+            `height: ${size}px`,
+            `left: ${startX}%`,
+            `top: ${startY}%`,
+            `background-color: ${color}`,
+            `opacity: ${opacity}`,
+            `border-radius: ${rnd(40, 50)}%`,           /* sedikit tidak bulat sempurna */
+            `animation: ${kf} ${duration}s ease-in-out ${delay}s infinite`,
+            /* Custom properties untuk delta gerakan */
+            `--dx1: ${d1.dx}px`,
+            `--dy1: ${d1.dy}px`,
+            `--s1: ${d1.scale}`,
+            `--dx2: ${d2.dx}px`,
+            `--dy2: ${d2.dy}px`,
+            `--s2: ${d2.scale}`,
+            `--dx3: ${d3.dx}px`,
+            `--dy3: ${d3.dy}px`,
+            `--s3: ${d3.scale}`,
+            `--dx4: ${d4.dx}px`,
+            `--dy4: ${d4.dy}px`,
+            `--s4: ${d4.scale}`,
+        ].join(';');
+
+        area.appendChild(el);
+    }
+})();
+
+/* ===== WORD HOVER GLOW ===== */
+(function () {
+    const skipTags    = new Set(['SCRIPT', 'STYLE', 'SVG', 'PATH', 'IMG', 'BUTTON', 'A']);
+    const skipClasses = new Set(['skill-title', 'ptab', 'portfolio-tabs']);
+
+    function wrapWords(node) {
+        if (node.nodeType === Node.TEXT_NODE) {
+            const text = node.textContent;
+            if (!text.trim()) return;
+
+            const parent = node.parentNode;
+            if (!parent || skipTags.has(parent.tagName)) return;
+            if (parent.classList && [...parent.classList].some(c => skipClasses.has(c))) return;
+
+            const frag = document.createDocumentFragment();
+            const parts = text.split(/(\s+)/);
+            parts.forEach(part => {
+                if (/^\s+$/.test(part)) {
+                    frag.appendChild(document.createTextNode(part));
+                } else if (part.length > 0) {
+                    const span = document.createElement('span');
+                    span.className = 'word-hover';
+                    span.textContent = part;
+                    frag.appendChild(span);
+                }
+            });
+            parent.replaceChild(frag, node);
+
+        } else if (node.nodeType === Node.ELEMENT_NODE && !skipTags.has(node.tagName)) {
+            if (node.classList && [...node.classList].some(c => skipClasses.has(c))) return;
+            Array.from(node.childNodes).forEach(wrapWords);
+        }
+    }
+
+    wrapWords(document.body);
+})();
+
+/* ===== SCROLL REVEAL ===== */
+(function () {
+    /* Elemen-elemen yang diberi animasi reveal, beserta grup stagger-nya */
+    const targets = [
+        /* Section headers */
+        { sel: '.title-section',           group: false },
+        { sel: '.portfolio-header',        group: false },
+
+        /* Skill slides — stagger per slide */
+        { sel: '.skill-slider-wrap',       group: false },
+
+        /* Portfolio tabs — stagger tiap tab */
+        { sel: '.portfolio-tabs',          group: false },
+        { sel: '.ptab',                    group: '.portfolio-tabs' },
+
+        /* Portfolio panels */
+        { sel: '.portfolio-panel',         group: '.portfolio-content-area' },
+        { sel: '.portfolio-empty',         group: false },
+
+        /* Chat section */
+        { sel: '.chat-inner > *',          group: false },
+        { sel: '.chat-link',               group: '.chat-links' },
+    ];
+
+    /* Tandai elemen dengan class reveal (dan reveal-group pada parent-nya) */
+    targets.forEach(({ sel, group }) => {
+        document.querySelectorAll(sel).forEach(el => {
+            /* Skip elemen yang sudah punya animasi sendiri (profile section) */
+            if (el.closest('#profile')) return;
+            el.classList.add('reveal');
+        });
+
+        if (group) {
+            document.querySelectorAll(group).forEach(parent => {
+                parent.classList.add('reveal-group');
+            });
+        }
+    });
+
+    /* Intersection Observer — trigger saat 12% elemen masuk viewport */
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target); /* sekali saja, ga balik ke hidden */
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+})();
+</script>
+</html>
