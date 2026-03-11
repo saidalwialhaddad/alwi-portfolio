@@ -366,7 +366,12 @@ links.forEach(link => {
 });
 
 nav.addEventListener("mouseleave", () => moveSlider(defaultLink));
-moveSlider(defaultLink);
+
+/* Tunggu font selesai load baru hitung posisi slider,
+   supaya getBoundingClientRect() dapat lebar teks yang akurat */
+document.fonts.ready.then(() => {
+    moveSlider(defaultLink);
+});
 
 const sections = [
     { id: 'profile',   link: links[0], mobileIdx: 0 },
@@ -619,6 +624,11 @@ setTimeout(() => {
     if (activeTab) movePTabSlider(activeTab);
 }, 100);
 
+document.fonts.ready.then(() => {
+    const activeTab = document.querySelector('.ptab.active');
+    if (activeTab) movePTabSlider(activeTab);
+});
+
 /* ===== HAMBURGER MENU ===== */
 const hamburger    = document.getElementById("hamburger");
 const mobileOverlay = document.getElementById("navbarRow2");
@@ -789,7 +799,7 @@ document.querySelectorAll(".mobile-nav-link").forEach(link => {
 /* ===== WORD HOVER GLOW ===== */
 (function () {
     const skipTags    = new Set(['SCRIPT', 'STYLE', 'SVG', 'PATH', 'IMG', 'BUTTON', 'A']);
-    const skipClasses = new Set(['skill-title']);
+    const skipClasses = new Set(['skill-title', 'ptab', 'portfolio-tabs']);
 
     function wrapWords(node) {
         if (node.nodeType === Node.TEXT_NODE) {
